@@ -5,15 +5,11 @@
     "ng": "ng",
     "start": "node dist/server",
     "build": "ng build",
-    "build:client-and-server-bundles": "ng build --prod",
-    "build:prerender": "npm run build:client-and-server-bundles && npm run webpack:server && npm run generate:prerender",
-    "build:ssr": "npm run build:client-and-server-bundles && npm run webpack:server",
-    "generate:prerender": "cd dist && node prerender",
-    "webpack:server": "webpack --config webpack.server.config.js --progress --colors",
-    "serve:prerender": "cd dist/browser && http-server",
-    "serve:ssr": "node dist/server",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
     "postinstall": "npm run build:ssr"
-  },  
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "^6.1.0",
@@ -57,4 +53,7 @@
       "node": "8.11.4",
       "npm": "5.6.0"
     }
+  
+
+
 }
