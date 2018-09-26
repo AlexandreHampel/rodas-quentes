@@ -1,9 +1,4 @@
 {
-  "engines": {
-    "node": "6.10.0",
-    "npm": "3.10.5"
-  },
-
   "name": "rodas-quentes",
   "version": "0.0.0",
   "scripts": {
@@ -54,7 +49,12 @@
   },
   "devDependencies": {
 
-  }
+  },
+    "engines": {
+      "node": "6.10.0",
+      "npm": "3.10.5"
+    }
+  
 
 
 }
